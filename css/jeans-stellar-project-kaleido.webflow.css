@@ -597,9 +597,11 @@ a {
 
 .estilo13 {
   width: 500px;
+  height: 73px;
   border-bottom: 5px solid #fff;
   background-color: #fff;
   color: #9b9b9b;
+  border-right: 1px solid #d9d9d9;
 }
 
 .estilo13.w--current {
@@ -608,7 +610,7 @@ a {
   height: 73px;
   margin-right: 0px;
   margin-left: 0px;
-  border-right: 0px solid rgba(0, 0, 0, .17);
+  border-right: 1px solid #d9d9d9;
   border-bottom: 5px solid hsla(179.02173913043478, 100.00%, 36.08%, 1.00);
   background-color: #fff;
   color: #333;
@@ -626,7 +628,7 @@ a {
 }
 
 .estilo11.w--current {
-  height: 75px;
+  height: 73px;
   padding-right: 30px;
   padding-bottom: 0px;
   padding-left: 30px;
@@ -736,13 +738,10 @@ a {
 }
 
 .paragraph-11.dot {
-  width: 120px;
-  margin-right: auto;
-  margin-left: 0px;
-  padding-bottom: 0px;
-  border-style: solid solid dashed;
-  border-width: 0px 0px 1px;
-  border-color: #000;
+  border-bottom: 2px dotted #b9b9b9;
+  font-weight: 400;
+  font-style: inherit;
+  width: max-content;
 }
 
 .button-14 {
@@ -884,6 +883,7 @@ a {
   align-items: center;
   border-radius: 9px;
   background-color: #fff;
+  padding-bottom: 40px;
 }
 
 .image-15 {
@@ -895,7 +895,7 @@ a {
 
 .div-block-65 {
   height: auto;
-  border-bottom: 2px solid rgba(0, 0, 0, .22);
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .heading-61 {
@@ -1458,17 +1458,15 @@ a {
 
 .button-16 {
   width: 200px;
-  margin-top: 60px;
-  margin-right: auto;
-  margin-left: -6px;
+  margin: 60px 0px;
   background-color: #f42e92;
   text-align: center;
 }
 
 .form-8 {
   display: block;
-  width: 250px;
-  margin-top: 100px;
+  width: 315px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -1751,9 +1749,40 @@ a {
 }
 
 .div-block-91 {
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px #d9d9d9 solid;
+    border-radius: 20px;
+    padding: 4px 9px;
+    position: absolute;
+    float: left;
+    left: 1%;
+    z-index: 100;
+    bottom: 38px;
+}
+.div-block-92 {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px #d9d9d9 solid;
+    border-radius: 20px;
+    padding: 4px 9px;
+    position: absolute;
+    float: left;
+    left: 34%;
+    z-index: 100;
+    bottom: 38px;
+}
+.div-block-93 {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px #d9d9d9 solid;
+    border-radius: 20px;
+    padding: 4px 9px;
+    position: absolute;
+    float: left;
+    left: 68%;
+    z-index: 100;
+    bottom: 38px;
 }
 
 .columns-35 {
@@ -1860,7 +1889,6 @@ a {
 
 .div-block-93 {
   display: block;
-  margin-right: -48px;
   margin-left: auto;
 }
 
@@ -2067,6 +2095,7 @@ a {
 .section-14 {
   margin-right: auto;
   margin-left: 0px;
+  padding-bottom: 20px;
 }
 
 .column-43 {
@@ -2183,7 +2212,7 @@ a {
   margin-left: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 30px;
   background-color: #f42e92;
   background-image: url('../images/ic_lock.png');
   background-position: 36% 45%;
@@ -2242,6 +2271,7 @@ a {
   margin-left: auto;
   background-color: #f42e92;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .column-53 {
@@ -2508,13 +2538,19 @@ a {
 }
 
 .paragraph-47 {
-  width: 95px;
-  padding-left: 20px;
-  padding-top: 15px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .heading-85 {
-  color: rgba(74, 74, 74, .61);
+}
+.heading-58 em {
+  background-color: red;
+  border-bottom: 2px dotted #b9b9b9;
+  font-weight: 400;
+  font-style: inherit;
+  width: max-content;
 }
 
 .heading-86 {
@@ -2526,7 +2562,23 @@ a {
 }
 
 .paragraph-49 {
-  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*---custom fixes---*/
+#fixing_cr{
+  margin-bottom: 60px;
 }
 
 html.w-mod-js *[data-ix="new-interaction"] {
@@ -2958,10 +3010,24 @@ html.w-mod-js *[data-ix="new-interaction"] {
     align-items: center;
   }
   .estilo12 {
-    width: 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
     height: 95px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 5px solid #fff;
+    border-left-width: 1px;
+    background-color: #fff;
+    color: #9b9b9b;
+    font-weight: 400;
   }
   .estilo12.w--current {
     height: 95px;
@@ -2985,7 +3051,9 @@ html.w-mod-js *[data-ix="new-interaction"] {
   .estilo11.w--current {
     width: 300px;
     height: 95px;
-    padding: 10px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 30px;
   }
   .tabs-content-2 {
     width: auto;
@@ -3791,6 +3859,15 @@ html.w-mod-js *[data-ix="new-interaction"] {
   }
   .form-2 {
     margin-top: 0px;
+  }
+  .div-block-91 {
+    bottom: 26px;
+  }
+  .div-block-92 {
+    bottom: 26px;
+  }
+  .div-block-93 {
+    bottom: 26px;
   }
   .div-block-20 {
     display: -webkit-box;
@@ -4738,6 +4815,9 @@ html.w-mod-js *[data-ix="new-interaction"] {
     -ms-flex-align: center;
     align-items: center;
   }
+  .form-block-7{
+    margin-bottom: 0px;
+  }
   .image-8 {
     margin-right: auto;
     margin-left: auto;
@@ -4866,8 +4946,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     width: 200px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 20px;
-    padding-left: 30px;
     border-radius: 7px;
     box-shadow: inset 0 0 20px -15px #000;
     text-align: center;
@@ -5213,7 +5291,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
   }
   .image-12 {
     display: block;
-    margin: 40px auto 20px;
+    margin: 10px;
   }
   .tabs-2 {
     display: inline;
@@ -5511,8 +5589,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     height: 95px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 20px 0px;
     border-bottom-color: #00b8b5;
     background-color: #fff;
   }
@@ -5521,18 +5598,19 @@ html.w-mod-js *[data-ix="new-interaction"] {
     height: 95px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 20px 0px;
     border-bottom: 5px solid #fff;
+    border-right: 1px solid #d9d9d9;
     background-color: #fff;
   }
   .estilo13.w--current {
-    width: 120px;
+    width: 200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0px;
     padding-left: 0px;
     border-bottom-color: #00b8b5;
+    border-right: 1px solid #d9d9d9;
     background-color: #fff;
   }
   .estilo11 {
@@ -5540,25 +5618,22 @@ html.w-mod-js *[data-ix="new-interaction"] {
     height: 95px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 20px 0px;
     border-bottom: 5px solid hsla(0, 0%, 100%, .18);
     background-color: #fff;
     color: #9b9b9b;
   }
   .estilo11.w--current {
-    width: auto;
+    width: 200px;
     margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-bottom: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0px;
     border-style: solid;
-    border-width: 0px 1px 5px 0px;
+    border-width: 0px 0px 5px;
     border-color: #66ffb5 #d9d9d9 #00b8b5 #fff;
     background-color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     font-weight: 400;
   }
@@ -5619,7 +5694,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
   .heading-48 {
     width: auto;
     margin: 25px auto 0px;
-    padding: 0px 50px 20px;
+    padding: 0px 18px 10px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -5692,9 +5767,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     margin-left: auto;
     background-color: #ff3838;
   }
-  .tab-pane-tab-3 {
-    margin-top: 40px;
-  }
   .div-block-58 {
     display: block;
     width: auto;
@@ -5749,16 +5821,16 @@ html.w-mod-js *[data-ix="new-interaction"] {
     padding-bottom: 28px;
   }
   .paragraph-11.dot {
-    width: 120px;
-    margin-left: 22px;
-    padding-top: 12px;
+    border-bottom: 2px dotted #b9b9b9;
+    font-weight: 400;
+    font-style: inherit;
+    width: max-content;
     padding-bottom: 0px;
-    padding-left: 20px;
-    border-bottom: 1px dotted #000;
+    padding-left: 0px;
   }
   .button-14 {
     display: block;
-    width: 150px;
+    width: 325px;
     margin: 100px auto 20px;
     background-color: #f42e92;
     text-align: center;
@@ -5803,7 +5875,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     display: flex;
   }
   .tab-pane-tab-4 {
-    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -5864,15 +5935,17 @@ html.w-mod-js *[data-ix="new-interaction"] {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    border-bottom: 0px solid hsla(179.02173913043478, 100.00%, 36.08%, 1.00);
+    padding-top: 20px;
   }
   .image-14 {
-    width: 146px;
-    height: 124px;
+    display: block;
+    width: 86px;
+    height: auto;
     max-width: none;
     margin-top: 20px;
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: auto;
+    text-align: left;
   }
   .columns-18 {
     display: -webkit-box;
@@ -6154,6 +6227,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     width: 280px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 10px;
   }
   .column-21 {
     margin-right: auto;
@@ -6234,6 +6308,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
   .div-block-81 {
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 20px;
   }
   .columns-29 {
     display: -webkit-box;
@@ -6251,7 +6326,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: auto;
     margin: 20px auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -6262,9 +6336,10 @@ html.w-mod-js *[data-ix="new-interaction"] {
     -ms-flex-align: center;
     align-items: center;
     background-color: #f42e92;
+    width: 195px;
   }
   .form-8 {
-    width: 200px;
+    width: 225px;
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
@@ -6275,7 +6350,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     display: -ms-flexbox;
     display: flex;
     width: auto;
-    margin: 60px 0px auto auto;
+    margin: 60px auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -6448,15 +6523,11 @@ html.w-mod-js *[data-ix="new-interaction"] {
     background-color: #00b8b5;
   }
   .div-block-87.small {
-    width: 50px;
-    margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
     background-color: #00b8b5;
   }
   .heading-79 {
-    width: 100px;
-    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -6610,11 +6681,12 @@ html.w-mod-js *[data-ix="new-interaction"] {
     padding-left: 0px;
     text-align: center;
   }
-  .div-block-92 {
-    width: 250px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
+  .div-block-92, .div-block-91, .div-block-93 {
+    bottom: 6px;
+    left: 3px;
+    font-size: 9px;
+    padding: 0px 7px;
+    position: relative;
   }
   .paragraph-21 {
     width: auto;
@@ -6672,9 +6744,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     margin-right: auto;
     margin-left: auto;
   }
-  .div-block-93 {
-    margin-right: -29px;
-  }
   .div-block-94 {
     margin-left: -32px;
   }
@@ -6692,11 +6761,10 @@ html.w-mod-js *[data-ix="new-interaction"] {
   }
   .paragraph-22 {
     width: auto;
-    margin-right: 10px;
-    margin-bottom: 27px;
-    margin-left: 10px;
+    margin: 10px auto 30px;
     font-size: 14px;
     text-align: center;
+    width: 250px;
   }
   .div-block-95 {
     width: auto;
@@ -6775,7 +6843,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     margin-left: 0px;
   }
   .style12 {
-    width: 280px;
+    width: 335px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -6797,7 +6865,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     width: 220px;
     margin-right: auto;
     margin-left: 0px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 15px;
   }
   .italic-text {
@@ -6807,8 +6875,10 @@ html.w-mod-js *[data-ix="new-interaction"] {
   .paragraph-24 {
     display: none;
     width: auto;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 35px;
+    text-align: center;
   }
   .columns-40 {
     display: -webkit-box;
@@ -6914,10 +6984,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     margin-right: auto;
     margin-left: -10px;
   }
-  .submit-button-7 {
-    background-position: 30% 10%;
-    background-size: 20px 26px;
-  }
   .paragraph-26 {
     display: none;
     width: 250px;
@@ -6937,7 +7003,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     margin-left: 40px;
   }
   .button-17 {
-    width: 160px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0px;
@@ -7158,8 +7224,8 @@ html.w-mod-js *[data-ix="new-interaction"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100px;
-    margin: 9px auto;
+    width: 90px;
+    margin: 10px auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -7168,6 +7234,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    line-height: 22px;
   }
   .paragraph-48 {
     margin: 20px auto;
@@ -7175,6 +7242,9 @@ html.w-mod-js *[data-ix="new-interaction"] {
   }
   .columns-50 {
     margin: -5px auto;
+  }
+  .paragraph-49 {
+    margin: 20px auto 10px;
   }
 }
 
